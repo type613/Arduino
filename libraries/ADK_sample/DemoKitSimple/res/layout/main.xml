@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/background_holo_dark"
+    android:orientation="vertical"
+    android:paddingBottom="80dip"
+    android:paddingLeft="20dip" >
+
+    <Button
+        android:id="@+id/btnTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED1" />
+
+    <Button
+        android:id="@+id/btnTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED2" />
+
+    <Button
+        android:id="@+id/btnTest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LED3" />
+
+    <TextView
+        android:id="@+id/txtTest0"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="SW1 = OFF" />
+
+    <TextView
+        android:id="@+id/txtTest1"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="SW2 = OFF" />
+
+    <TextView
+        android:id="@+id/txtTest2"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:text="SW3 = OFF" />
+
+</LinearLayout>

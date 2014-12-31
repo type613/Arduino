@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ADKQSteer</string>
+    <string name="band_a">バンドA</string>
+    <string name="band_b">バンドB</string>
+    <string name="band_c">バンドC</string><string name="band_d">バンドD</string>
+    <string name="stop">□</string>
+    <string name="forward">↑</string>
+    <string name="back">↓</string>
+    <string name="right_forward">↗</string>
+    <string name="right">→</string>
+    <string name="left_forward">↖</string>
+    <string name="right_back">↘</string>
+    <string name="left_back">↙</string>
+    <string name="left">←</string>
+    
+    <string name="turbo_on">ターボON</string>
+    <string name="turbo_off">ターボOFF</string>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jp.co.socym.Drobook.DemoKitSimple"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="11" />
+
+    <application
+        android:icon="@drawable/ic_launcher_demokit"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+
+        <!-- USB Accessoryの使用を宣言 (1) -->
+        <uses-library android:name="com.android.future.usb.accessory" />
+
+        <!-- 起動アクティビティ (2) -->
+        <activity
+            android:name=".DemoKitActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- USB接続されたときに起動するアクティビティ (3) -->
+        <activity
+            android:name="jp.co.socym.Drobook.DemoKitSimple.UsbAccessoryActivity"
+            android:label="DemoKit"
+            android:launchMode="singleInstance"
+            android:taskAffinity="" >
+
+            <!-- USB接続されたときに発信される、外部からのIntentを受信 -->
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <!-- アクセサリボードの情報を設定 -->
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+    </application>
+
+</manifest>

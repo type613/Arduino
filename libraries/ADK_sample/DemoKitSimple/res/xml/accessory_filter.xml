@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--ADKボードのファームウェアで指定した名前と一致させる -->
+	<!--AndroidManifest.xmlで参照されている -->
+	<usb-accessory manufacturer="Google, Inc." model="DemoKit"
+		version="1.0" />
+</resources>
